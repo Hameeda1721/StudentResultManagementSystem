@@ -3,7 +3,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import javax.swing.JOptionPane;
 
-public class ConnectionProvider {
+public class ConnectionProvider{
     public static Connection getCon(){
      try{
          Class.forName("com.mysql.jdbc.Driver");
