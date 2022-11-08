@@ -117,7 +117,7 @@ public class AdminHomePage extends javax.swing.JFrame{
         frame.setLocationRelativeTo(null);
     }
 
-    private void LogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogoutActionPerformed
+    private void LogoutActionPerformed(java.awt.event.ActionEvent evt) {
         int flag = JOptionPane.showConfirmDialog(null,"Are You Sure Do You Want To Exit","Submit",JOptionPane.YES_NO_OPTION);
         if(flag==0){
             setVisible(false);
