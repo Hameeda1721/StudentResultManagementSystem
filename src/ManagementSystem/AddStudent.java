@@ -4,8 +4,7 @@ import java.sql.*;
 import javax.swing.JOptionPane;
 
 public class AddStudent extends javax.swing.JFrame{
-    public AddStudent() 
-    {
+    public AddStudent(){
         initComponents();
     }
     
