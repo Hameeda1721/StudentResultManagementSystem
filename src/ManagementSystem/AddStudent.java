@@ -3,15 +3,13 @@ import ConnectionProvider.ConnectionProvider;
 import java.sql.*;
 import javax.swing.JOptionPane;
 
-public class AddStudent extends javax.swing.JFrame
-{
+public class AddStudent extends javax.swing.JFrame{
     public AddStudent() 
     {
         initComponents();
     }
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
-
+    
+    private void initComponents(){
         Name = new javax.swing.JLabel();
         RollNo = new javax.swing.JLabel();
         Gender = new javax.swing.JLabel();
@@ -33,81 +31,81 @@ public class AddStudent extends javax.swing.JFrame
         setMinimumSize(new java.awt.Dimension(700, 560));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Name.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Name.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         Name.setText("Name");
         Name.setMaximumSize(new java.awt.Dimension(180, 70));
         Name.setMinimumSize(new java.awt.Dimension(180, 70));
         Name.setPreferredSize(new java.awt.Dimension(180, 70));
         getContentPane().add(Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 120, 40));
 
-        RollNo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        RollNo.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         RollNo.setText("Roll No");
         RollNo.setMaximumSize(new java.awt.Dimension(180, 70));
         RollNo.setMinimumSize(new java.awt.Dimension(180, 70));
         RollNo.setPreferredSize(new java.awt.Dimension(180, 70));
         getContentPane().add(RollNo, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 100, 40));
 
-        Gender.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Gender.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         Gender.setText("Gender");
         Gender.setMaximumSize(new java.awt.Dimension(180, 70));
         Gender.setMinimumSize(new java.awt.Dimension(180, 70));
         Gender.setPreferredSize(new java.awt.Dimension(180, 70));
         getContentPane().add(Gender, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, 90, 40));
 
-        FatherName.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        FatherName.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         FatherName.setText("Father's Name");
         FatherName.setMaximumSize(new java.awt.Dimension(180, 70));
         FatherName.setMinimumSize(new java.awt.Dimension(180, 70));
         FatherName.setPreferredSize(new java.awt.Dimension(180, 70));
         getContentPane().add(FatherName, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 190, 140, 30));
 
-        Course.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Course.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         Course.setText("Course");
         Course.setMaximumSize(new java.awt.Dimension(180, 70));
         Course.setMinimumSize(new java.awt.Dimension(180, 70));
         Course.setPreferredSize(new java.awt.Dimension(180, 70));
         getContentPane().add(Course, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 240, 100, 30));
 
-        Branch.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Branch.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         Branch.setText("Branch");
         Branch.setMaximumSize(new java.awt.Dimension(180, 70));
         Branch.setMinimumSize(new java.awt.Dimension(180, 70));
         Branch.setPreferredSize(new java.awt.Dimension(180, 70));
         getContentPane().add(Branch, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 290, 100, 30));
 
-        Submit.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        Submit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ManagementSystem/icons8-submit-document-32.png"))); // NOI18N
+        Submit.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
+        Submit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ManagementSystem/icons8-submit-document-32.png"))); 
         Submit.setText("Submit");
         Submit.setMaximumSize(new java.awt.Dimension(180, 70));
         Submit.setMinimumSize(new java.awt.Dimension(180, 70));
         Submit.setPreferredSize(new java.awt.Dimension(180, 70));
-        Submit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        Submit.addActionListener(new java.awt.event.ActionListener(){
+            public void actionPerformed(java.awt.event.ActionEvent evt){
                 SubmitActionPerformed(evt);
             }
         });
         getContentPane().add(Submit, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 120, 40));
 
-        Cancel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        Cancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ManagementSystem/icons8-cancel-24.png"))); // NOI18N
+        Cancel.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
+        Cancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ManagementSystem/icons8-cancel-24.png"))); 
         Cancel.setText("Cancel");
         Cancel.setMaximumSize(new java.awt.Dimension(180, 70));
         Cancel.setMinimumSize(new java.awt.Dimension(180, 70));
         Cancel.setPreferredSize(new java.awt.Dimension(180, 70));
-        Cancel.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        Cancel.addActionListener(new java.awt.event.ActionListener(){
+            public void actionPerformed(java.awt.event.ActionEvent evt){
                 CancelActionPerformed(evt);
             }
         });
         getContentPane().add(Cancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 370, 110, 30));
 
-        Clear.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Clear.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         Clear.setText("Clear");
         Clear.setMaximumSize(new java.awt.Dimension(180, 70));
         Clear.setMinimumSize(new java.awt.Dimension(180, 70));
         Clear.setPreferredSize(new java.awt.Dimension(180, 70));
-        Clear.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        Clear.addActionListener(new java.awt.event.ActionListener(){
+            public void actionPerformed(java.awt.event.ActionEvent evt){
                 ClearActionPerformed(evt);
             }
         });
@@ -125,22 +123,21 @@ public class AddStudent extends javax.swing.JFrame
         getContentPane().add(StudentBranch, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 300, 150, 20));
         getContentPane().add(EnterFathername, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 190, 150, -1));
 
-        image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ManagementSystem/wp7701735-anime-school-aesthetic-wallpapers.png"))); // NOI18N
+        image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ManagementSystem/wp7701735-anime-school-aesthetic-wallpapers.png"))); 
         image.setText("jLabel7");
         getContentPane().add(image, new org.netbeans.lib.awtextra.AbsoluteConstraints(-170, -80, -1, -1));
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
-    private void CancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelActionPerformed
+    private void CancelActionPerformed(java.awt.event.ActionEvent evt){
          int flag = JOptionPane.showConfirmDialog(null,"Are You Sure Do You Want To Exit","Submit",JOptionPane.YES_NO_OPTION);
-         if(flag==0)
-         {
+         if(flag==0){
              setVisible(false);
          }
-    }//GEN-LAST:event_CancelActionPerformed
+    }
 
-    private void SubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubmitActionPerformed
+    private void SubmitActionPerformed(java.awt.event.ActionEvent evt){
         String name = EnterStudentName.getText();
         String rollNo = EnterRollNo.getText();
         String gender = (String)StudentGender.getSelectedItem();
@@ -163,16 +160,15 @@ public class AddStudent extends javax.swing.JFrame
         {
              JOptionPane.showMessageDialog(null,e.toString());
         }
-    }//GEN-LAST:event_SubmitActionPerformed
+    }
 
-    private void ClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ClearActionPerformed
+    private void ClearActionPerformed(java.awt.event.ActionEvent evt){
             setVisible(false);
             AddStudent frame = new AddStudent();
             frame.setVisible(true);
             frame.setLocationRelativeTo(null);  
-    }//GEN-LAST:event_ClearActionPerformed
-        public static void main(String args[])
-        {
+    }
+        public static void main(String args[]){
         java.awt.EventQueue.invokeLater(new Runnable()
         {
             public void run()
@@ -182,7 +178,6 @@ public class AddStudent extends javax.swing.JFrame
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Branch;
     private javax.swing.JButton Cancel;
     private javax.swing.JButton Clear;
@@ -199,5 +194,5 @@ public class AddStudent extends javax.swing.JFrame
     private javax.swing.JComboBox<String> StudentGender;
     private javax.swing.JButton Submit;
     private javax.swing.JLabel image;
-    // End of variables declaration//GEN-END:variables
+    
 }
