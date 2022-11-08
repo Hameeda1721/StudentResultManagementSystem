@@ -8,9 +8,7 @@ public class AddResults extends javax.swing.JFrame{
   public AddResults(){
         initComponents();
     }
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
-
+   private void initComponents(){
         rollno = new javax.swing.JLabel();
         search = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -34,15 +32,15 @@ public class AddResults extends javax.swing.JFrame{
         setMinimumSize(new java.awt.Dimension(700, 560));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        rollno.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        rollno.setFont(new java.awt.Font("Segoe UI", 1, 12)); 
         rollno.setText("Roll No");
         getContentPane().add(rollno, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, -1, -1));
 
-        search.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        search.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ManagementSystem/icons8-search-30.png"))); // NOI18N
+        search.setFont(new java.awt.Font("Segoe UI", 1, 12)); 
+        search.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ManagementSystem/icons8-search-30.png"))); 
         search.setText("Search");
-        search.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        search.addActionListener(new java.awt.event.ActionListener(){
+            public void actionPerformed(java.awt.event.ActionEvent evt){
                 searchActionPerformed(evt);
             }
         });
@@ -63,30 +61,30 @@ public class AddResults extends javax.swing.JFrame{
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 530, 100));
 
-        physics.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        physics.setFont(new java.awt.Font("Segoe UI", 1, 12)); 
         physics.setText("Physics-1");
         getContentPane().add(physics, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, 70, -1));
 
-        maths.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        maths.setFont(new java.awt.Font("Segoe UI", 1, 12)); 
         maths.setText("Maths");
         getContentPane().add(maths, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 250, 70, 20));
 
-        chemistry.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        chemistry.setFont(new java.awt.Font("Segoe UI", 1, 12)); 
         chemistry.setText("Chemistry");
         getContentPane().add(chemistry, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, 60, -1));
 
-        electrical.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        electrical.setFont(new java.awt.Font("Segoe UI", 1, 12)); 
         electrical.setText("Electrical");
         getContentPane().add(electrical, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 340, 60, -1));
 
-        biology.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        biology.setFont(new java.awt.Font("Segoe UI", 1, 12)); 
         biology.setText("Biology");
         getContentPane().add(biology, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 390, 50, -1));
         getContentPane().add(PhysicsMarks, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 200, 130, 30));
         getContentPane().add(MathsMarks, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 242, 130, 30));
 
-        ChemistryMarks.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ChemistryMarks.addActionListener(new java.awt.event.ActionListener(){
+            public void actionPerformed(java.awt.event.ActionEvent evt){
                 ChemistryMarksActionPerformed(evt);
             }
         });
@@ -96,17 +94,17 @@ public class AddResults extends javax.swing.JFrame{
         getContentPane().add(EnterRollNo, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, 120, -1));
 
         submit.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        submit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ManagementSystem/icons8-submit-document-32.png"))); // NOI18N
+        submit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ManagementSystem/icons8-submit-document-32.png"))); 
         submit.setText("Submit");
-        submit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        submit.addActionListener(new java.awt.event.ActionListener(){
+            public void actionPerformed(java.awt.event.ActionEvent evt){
                 submitActionPerformed(evt);
             }
         });
         getContentPane().add(submit, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 130, -1));
 
-        Close.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        Close.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ManagementSystem/icons8-close-30.png"))); // NOI18N
+        Close.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
+        Close.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ManagementSystem/icons8-close-30.png"))); 
         Close.setText("Close");
         Close.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,13 +118,13 @@ public class AddResults extends javax.swing.JFrame{
         getContentPane().add(image, new org.netbeans.lib.awtextra.AbsoluteConstraints(-110, -140, -1, -1));
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
-    private void ChemistryMarksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChemistryMarksActionPerformed
+    private void ChemistryMarksActionPerformed(java.awt.event.ActionEvent evt){
 
-    }//GEN-LAST:event_ChemistryMarksActionPerformed
+    }
 
-    private void searchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchActionPerformed
+    private void searchActionPerformed(java.awt.event.ActionEvent evt){
         String rollNo = EnterRollNo.getText();
         try{
             Connection con = ConnectionProvider.getCon();
@@ -137,11 +135,11 @@ public class AddResults extends javax.swing.JFrame{
                 JOptionPane.showMessageDialog(null, "Entered rollNo is Wrong");
             }
         }
-        catch(Exception e){        {
+        catch(Exception e){        
             JOptionPane.showMessageDialog(null, e.toString());
         }
-    }//GEN-LAST:event_searchActionPerformed
-    private void submitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitActionPerformed
+    }
+    private void submitActionPerformed(java.awt.event.ActionEvent evt){
 
         String rollNo = EnterRollNo.getText();
         int physicsMarks = Integer.parseInt(PhysicsMarks.getText());
@@ -164,13 +162,13 @@ public class AddResults extends javax.swing.JFrame{
         catch(Exception e){
             JOptionPane.showMessageDialog(null, e.toString());   
         }
-    }//GEN-LAST:event_submitActionPerformed
-    private void CloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CloseActionPerformed
+    }
+    private void CloseActionPerformed(java.awt.event.ActionEvent evt){
          int flag = JOptionPane.showConfirmDialog(null,"Are You Sure Do You Want To Exit","Submit",JOptionPane.YES_NO_OPTION);
          if(flag==0){
              setVisible(false);
          }
-    }//GEN-LAST:event_CloseActionPerformed
+    }
          public static void main(String args[]){
           java.awt.EventQueue.invokeLater(new Runnable(){
             public void run(){
@@ -178,7 +176,6 @@ public class AddResults extends javax.swing.JFrame{
             }
         });
     }
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField BiologyMarks;
     private javax.swing.JTextField ChemistryMarks;
     private javax.swing.JButton Close;
@@ -197,5 +194,5 @@ public class AddResults extends javax.swing.JFrame{
     private javax.swing.JLabel rollno;
     private javax.swing.JButton search;
     private javax.swing.JButton submit;
-    // End of variables declaration//GEN-END:variables
+   
 }
